@@ -2,6 +2,9 @@ baseURL = 'https://roehrs.ai/'
 languageCode = 'en-us'
 title = 'Roehrs.ai'
 theme= 'paige'
+publishDir = 'docs'
 
 [[module.imports]]
 path = "github.com/willfaught/paige"
+
+
