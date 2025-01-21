@@ -1,0 +1,12 @@
+Roehrs.ai
+
+THis site is built using go hugo with the paige theme.
+
+See https://themes.gohugo.io/themes/paige/.
+
+
+start development server with
+
+hugo server -D
+
+
