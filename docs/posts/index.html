@@ -55,14 +55,14 @@
 <meta property="og:url" content="http://localhost:1313/posts/">
   <meta property="og:site_name" content="Roehrs.ai">
   <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Tempor est exercitation ad qui pariatur quis adipisicing aliquip nisi ea consequat ipsum occaecat. Nostrud consequat ullamco laboris fugiat esse esse adipisicing velit laborum ipsum incididunt ut enim. Dolor pariatur nulla quis fugiat dolore excepteur. Aliquip ad quis aliqua enim do consequat.">
+  <meta property="og:description" content="Thoughts and history of AI.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Tempor est exercitation ad qui pariatur quis adipisicing aliquip nisi ea consequat ipsum occaecat. Nostrud consequat ullamco laboris fugiat esse esse adipisicing velit laborum ipsum incididunt ut enim. Dolor pariatur nulla quis fugiat dolore excepteur. Aliquip ad quis aliqua enim do consequat.">
+  <meta name="twitter:description" content="Thoughts and history of AI.">
 
 
 
@@ -463,7 +463,69 @@ table {
 
 
 
+    body {
+    font-family: "Archivo",  serif;
+    font-weight: 600;
+    font-size: 16pt;
+    font-style: medium;
+    font-optical-sizing: auto;
+}
+
+#paige-site-title {
+  font-family: "Archivo", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-variation-settings:
+    "wdth" 100;
+  color:#4E01E0;
+}
+
+a, .nav-link {
+    font-family: "Archivo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: Regular;
+    font-variation-settings:
+    "wdth" 100;
+    color:#4E01E0;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.archivo-<uniquifier> {
+  font-family: "Archivo", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 </style>
+
+
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 
     
@@ -674,7 +736,7 @@ table {
 
 
         
-            <main class="mw-100" id="paige-content"><p>Tempor est exercitation ad qui pariatur quis adipisicing aliquip nisi ea consequat ipsum occaecat. Nostrud consequat ullamco laboris fugiat esse esse adipisicing velit laborum ipsum incididunt ut enim. Dolor pariatur nulla quis fugiat dolore excepteur. Aliquip ad quis aliqua enim do consequat.</p>
+            <main class="mw-100" id="paige-content"><p>Thoughts and history of AI.</p>
 </main>
         
 
@@ -773,7 +835,7 @@ table {
 
     
         <p class="paige-keywords paige-row-narrow text-center text-secondary">
-            <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/blue/">Blue</a> · <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/green/">Green</a> · <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/red/">Red</a>
+            <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/fundamentals/">Fundamentals</a>
         </p>
     
 
@@ -841,7 +903,7 @@ table {
 
     
         <p class="paige-keywords paige-row-narrow text-center text-secondary">
-            <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/green/">Green</a> · <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/red/">Red</a>
+            <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/fundamentals/">Fundamentals</a>
         </p>
     
 
@@ -909,7 +971,7 @@ table {
 
     
         <p class="paige-keywords paige-row-narrow text-center text-secondary">
-            <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/red/">Red</a>
+            <a class="link-secondary paige-keyword paige-keyword-tag" href="/tags/fundamentals/">Fundamentals</a>
         </p>
     
 
@@ -1014,13 +1076,14 @@ table {
 
     <footer id="paige-site-footer">
         
+            Copyright 2023, Roehrs.ai & Louis F. Roehrs 
 
         
 
         
 
         
-            <p class="paige-row-narrow text-center text-secondary" id="paige-credit">&lt;a class=&ldquo;link-secondary text-decoration-none&rdquo; href=&quot;{{ $theme }}&quot; {{ with $target }} target=&quot;{{ . }}&quot; {{ end }}&gt;Paige Theme<!-- raw HTML omitted --></p>
+
         
 
         

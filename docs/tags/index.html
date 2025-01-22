@@ -461,7 +461,69 @@ table {
 
 
 
+    body {
+    font-family: "Archivo",  serif;
+    font-weight: 600;
+    font-size: 16pt;
+    font-style: medium;
+    font-optical-sizing: auto;
+}
+
+#paige-site-title {
+  font-family: "Archivo", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-variation-settings:
+    "wdth" 100;
+  color:#4E01E0;
+}
+
+a, .nav-link {
+    font-family: "Archivo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: Regular;
+    font-variation-settings:
+    "wdth" 100;
+    color:#4E01E0;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.archivo-<uniquifier> {
+  font-family: "Archivo", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 </style>
+
+
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 
     
@@ -741,127 +803,7 @@ table {
 
 <div class="paige-page paige-published w-100">
     
-        <p class="paige-row-narrow paige-title text-center"><a href="/tags/blue/">Blue</a></p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <p class="paige-date text-center paige-row-narrow text-secondary">
-            <time datetime="2023-03-15">March 15, 2023</time>
-        </p>
-    
-
-    
-</div>
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-published w-100">
-    
-        <p class="paige-row-narrow paige-title text-center"><a href="/tags/green/">Green</a></p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <p class="paige-date text-center paige-row-narrow text-secondary">
-            <time datetime="2023-03-15">March 15, 2023</time>
-        </p>
-    
-
-    
-</div>
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-published w-100">
-    
-        <p class="paige-row-narrow paige-title text-center"><a href="/tags/red/">Red</a></p>
+        <p class="paige-row-narrow paige-title text-center"><a href="/tags/fundamentals/">Fundamentals</a></p>
     
 
     
@@ -969,13 +911,14 @@ table {
 
     <footer id="paige-site-footer">
         
+            Copyright 2023, Roehrs.ai & Louis F. Roehrs 
 
         
 
         
 
         
-            <p class="paige-row-narrow text-center text-secondary" id="paige-credit">&lt;a class=&ldquo;link-secondary text-decoration-none&rdquo; href=&quot;{{ $theme }}&quot; {{ with $target }} target=&quot;{{ . }}&quot; {{ end }}&gt;Paige Theme<!-- raw HTML omitted --></p>
+
         
 
         

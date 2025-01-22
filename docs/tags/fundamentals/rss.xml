@@ -40,6 +40,8 @@
 
     
 
+    
+
 
 
 
@@ -56,7 +58,7 @@
             
 
             
-                <link href="http://localhost:1313/posts/" rel="self" type="text/html"/>
+                <link href="http://localhost:1313/tags/fundamentals/" rel="self" type="text/html"/>
             
         
             
@@ -64,7 +66,7 @@
             
 
             
-                <link href="http://localhost:1313/posts/rss.xml" rel="alternate" type="application/rss+xml"/>
+                <link href="http://localhost:1313/tags/fundamentals/rss.xml" rel="alternate" type="application/rss+xml"/>
             
         
 
@@ -82,11 +84,11 @@
             <lastBuildDate>2023-03-15 11:00:00 -0700 PDT</lastBuildDate>
         
 
-        <link>http://localhost:1313/posts/</link>
+        <link>http://localhost:1313/tags/fundamentals/</link>
 
         
 
-        <title>Posts · Home</title>
+        <title>Fundamentals · Tags · Home</title>
 
         
 

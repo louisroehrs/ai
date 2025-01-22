@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://roehrs.ai/'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+
 
 [[menus.main]]
 name = 'Home'
@@ -21,3 +21,5 @@ weight = 30
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+
