@@ -4,6 +4,15 @@ body {
     font-size: 16pt;
     font-style: medium;
     font-optical-sizing: auto;
+    background-color:rgba(0,0,100,.2);
+    
+}
+
+.card {
+    border: 1px solid rgb(30,30,30,.1);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 #paige-site-title {
