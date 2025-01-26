@@ -8,6 +8,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 disable_breadcrumbs = true
 disable_copyright = false
 disable_credit = true
+
 disable_description = false
 disable_license = false
 disable_menu = false

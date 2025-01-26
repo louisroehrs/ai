@@ -12,26 +12,6 @@
 
 
 
-    
-        
-    
-
-    
-        
-    
-
-    
-
-    
-        
-    
-
-    
-
-    
-        
-    
-
 
 
 
@@ -77,8 +57,6 @@
         
 
         
-            <lastBuildDate>2023-03-15 11:00:00 -0700 PDT</lastBuildDate>
-        
 
         <link>http://localhost:1313/</link>
 
@@ -88,140 +66,6 @@
 
         
 
-        
-            <item>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-                
-
-                
-
-                
-
-                
-                    <description><![CDATA[<p>Neural Networks</p>
-<p><img src="/posts/post-3/bryce-canyon.jpg" alt="Bryce Canyon National Park"></p>
-]]></description>
-                
-
-                <guid isPermaLink="false">tag:localhost:1313,2023-03-15:/posts/post-3/</guid>
-
-                
-                    <link>http://localhost:1313/posts/post-3/</link>
-                
-
-                
-                    <pubDate>Wed, 15 Mar 2023 11:00:00 PDT</pubDate>
-                
-
-                
-                    <title>Post 3</title>
-                
-            </item>
-        
-            <item>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-                
-
-                
-
-                
-
-                
-                    <description><![CDATA[<p>Fuzzy Logic</p>
-<p><img src="https://cdn.hackr.io/uploads/posts/attachments/1667299624QZZmuHDQG7.png" alt="Fuzzy Logic"></p>
-]]></description>
-                
-
-                <guid isPermaLink="false">tag:localhost:1313,2023-02-15:/posts/post-2/</guid>
-
-                
-                    <link>http://localhost:1313/posts/post-2/</link>
-                
-
-                
-                    <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-                
-
-                
-                    <title>Post 2</title>
-                
-            </item>
-        
-            <item>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-                
-
-                
-
-                
-
-                
-                    <description><![CDATA[<p>Boolean logic</p>
-]]></description>
-                
-
-                <guid isPermaLink="false">tag:localhost:1313,2023-01-15:/posts/post-1/</guid>
-
-                
-                    <link>http://localhost:1313/posts/post-1/</link>
-                
-
-                
-                    <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-                
-
-                
-                    <title>Post 1</title>
-                
-            </item>
         
     </channel>
 </rss>

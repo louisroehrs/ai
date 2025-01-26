@@ -461,7 +461,78 @@ table {
 
 
 
+    body {
+    font-family: "Archivo",  serif;
+    font-weight: 600;
+    font-size: 16pt;
+    font-style: medium;
+    font-optical-sizing: auto;
+    background-color:rgba(0,0,100,.2);
+    
+}
+
+.card {
+    border: 1px solid rgb(30,30,30,.1);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#paige-site-title {
+  font-family: "Archivo", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-variation-settings:
+    "wdth" 100;
+  color:#4E01E0;
+}
+
+a, .nav-link {
+    font-family: "Archivo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: Regular;
+    font-variation-settings:
+    "wdth" 100;
+    color:#4E01E0;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.archivo-<uniquifier> {
+  font-family: "Archivo", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 </style>
+
+
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 
     
@@ -498,6 +569,8 @@ table {
 
 
     
+        
+    
 
 
 
@@ -513,7 +586,7 @@ table {
         
             
                 <nav aria-label="Menu" class="paige-row-wide" id="paige-menu">
-                    <ul class="align-items-center justify-content-center nav ">
+                    <ul class="align-items-center justify-content-center nav  nav-pills ">
                         
                             
                             
@@ -522,7 +595,7 @@ table {
                             
 
                             <li class="nav-item ">
-                                <a   class="  nav-link   text-decoration-underline "  href="/"    >Home</a>
+                                <a   class="  nav-link  "  href="/"    >Home</a>
 
                                 
                             </li>
@@ -534,7 +607,7 @@ table {
                             
 
                             <li class="nav-item ">
-                                <a   class="  nav-link   text-decoration-underline "  href="/posts/"    >Posts</a>
+                                <a   class="  nav-link  "  href="/posts/"    >Posts</a>
 
                                 
                             </li>
@@ -546,7 +619,7 @@ table {
                             
 
                             <li class="nav-item ">
-                                <a   class="  nav-link   text-decoration-underline "  href="/tags/"    >Tags</a>
+                                <a   class="  nav-link  "  href="/tags/"    >Tags</a>
 
                                 
                             </li>
@@ -556,24 +629,6 @@ table {
             
         
 
-        
-            <nav aria-label="Breadcrumbs" class="paige-row-wide" id="paige-breadcrumbs">
-                <div class="d-flex justify-content-center">
-                    <ol class="breadcrumb mb-0">
-                        
-
-                        
-
-                        
-                            
-
-                            
-
-                            <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        
-                    </ol>
-                </div>
-            </nav>
         
 
         
