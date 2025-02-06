@@ -9,4 +9,6 @@ start development server with
 
 hugo server -D
 
+New content:
 
+hugo new content -c themes/paige/content/posts/ dependency-chart.md 

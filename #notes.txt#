@@ -1,0 +1,24 @@
+Roehrs.ai
+
+THis site is built using go hugo with the paige theme.
+
+See https://themes.gohugo.io/themes/paige/.
+
+
+start development server with
+
+hugo server -D
+
+
+=============================
+
+
+ollama run deepseek-r1
+
+
+https://www.reddit.com/r/selfhosted/comments/1i6ggyh/got_deepseek_r1_running_locally_full_setup_guide/
+
+https://github.com/ollama/ollama
+
+
+

@@ -1,0 +1,49 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+
+def create_dependency_graph(dependencies):
+    """
+    Create and visualize a directed graph from a dictionary of dependencies.
+    
+    Args:
+        dependencies (dict): Dictionary where keys are items and values are lists of dependencies
+    """
+    # Create a directed graph
+    G = nx.DiGraph()
+    
+    # Add nodes and edges from the dependencies
+    for item, deps in dependencies.items():
+        # Add the main item if it doesn't exist
+        if item not in G:
+            G.add_node(item)
+        
+        # Add dependencies and edges
+        for dep in deps:
+            if dep not in G:
+                G.add_node(dep)
+            G.add_edge(dep, item)  # Arrow points from dependency to dependent item
+    
+    # Create the visualization
+    plt.figure(figsize=(10, 8))
+    pos = nx.spring_layout(G)
+    
+    # Draw the graph
+    nx.draw(G, pos, with_labels=True, node_color='lightblue', 
+            node_size=2000, arrowsize=20, 
+            font_size=10, font_weight='bold')
+    
+    plt.title("Dependency Graph")
+    plt.show()
+
+# Example usage
+if __name__ == "__main__":
+    # Example dependencies dictionary
+    dependencies = {
+        'A': ['B', 'C'],
+        'B': ['D'],
+        'C': ['D', 'E'],
+        'D': ['E'],
+        'E': []
+    }
+    
+    create_dependency_graph(dependencies)

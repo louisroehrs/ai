@@ -38,6 +38,12 @@
         
     
 
+    
+
+    
+        
+    
+
 
 
 
@@ -83,7 +89,7 @@
         
 
         
-            <lastBuildDate>2024-01-23 10:00:00 -0700 -0700</lastBuildDate>
+            <lastBuildDate>2025-02-06 13:34:40 -0800 PST</lastBuildDate>
         
 
         <link>http://localhost:1313/</link>
@@ -94,6 +100,106 @@
 
         
 
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<p>So I used the Cursor AI-assisted integrated development environment (IDE)  pointing to the claude-3.5-sonnet model and asked it to build a dependency diagram example.  We have a big project at work and am looking to map out all the dependencies like a king.  Well, claude wrote the code like a king and it worked first try.</p>
+<p>I asked it to give me layout options and it did that as well.</p>
+<p>More on Cursor later.</p>
+<p><img src="/posts/dependency-chart/dchart.png" alt="Dependency Chart"></p>
+<p>Here is the prompt.</p>
+<p>Write a program that will take a list of items and dependencies to produce a graph showing the items with relation to their dependencies.</p>
+<p>Here is the code</p>
+<p>&quot;&quot;&quot;</p>
+<pre tabindex="0"><code>import networkx as nx
+import matplotlib.pyplot as plt
+
+def create_dependency_graph(dependencies):
+    &#34;&#34;&#34;
+    Create and visualize a directed graph from a dictionary of dependencies.
+    
+    Args:
+        dependencies (dict): Dictionary where keys are items and values are lists of dependencies
+    &#34;&#34;&#34;
+    # Create a directed graph
+    G = nx.DiGraph()
+    
+    # Add nodes and edges from the dependencies
+    for item, deps in dependencies.items():
+        # Add the main item if it doesn&#39;t exist
+        if item not in G:
+            G.add_node(item)
+        
+        # Add dependencies and edges
+        for dep in deps:
+            if dep not in G:
+                G.add_node(dep)
+            G.add_edge(dep, item)  # Arrow points from dependency to dependent item
+    
+    # Create the visualization
+    plt.figure(figsize=(10, 8))
+    pos = nx.spring_layout(G)
+    
+    # Draw the graph
+    nx.draw(G, pos, with_labels=True, node_color=&#39;lightblue&#39;, 
+            node_size=2000, arrowsize=20, 
+            font_size=10, font_weight=&#39;bold&#39;)
+    
+    plt.title(&#34;Dependency Graph&#34;)
+    plt.show()
+</code></pre><h1 id="example-usage">Example usage</h1>
+<p>&quot;&quot;&quot;</p>
+<pre tabindex="0"><code>if __name__ == &#34;__main__&#34;:
+    # Example dependencies dictionary
+    dependencies = {
+        &#39;A&#39;: [&#39;B&#39;, &#39;C&#39;],
+        &#39;B&#39;: [&#39;D&#39;],
+        &#39;C&#39;: [&#39;D&#39;, &#39;E&#39;],
+        &#39;D&#39;: [&#39;E&#39;],
+        &#39;E&#39;: []
+    }
+    
+create_dependency_graph(dependencies)
+</code></pre>]]></description>
+                
+
+                <guid isPermaLink="false">tag:localhost:1313,2025-02-06:/posts/dependency-chart/</guid>
+
+                
+                    <link>http://localhost:1313/posts/dependency-chart/</link>
+                
+
+                
+                    <pubDate>Thu, 06 Feb 2025 13:34:40 PST</pubDate>
+                
+
+                
+                    <title>Dependency Chart</title>
+                
+            </item>
         
             <item>
                 
