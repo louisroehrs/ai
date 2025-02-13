@@ -1,0 +1,9 @@
+ai:
+  label: AI
+  permalink: /ai
+  description: AI Articles
+
+hello:
+  label: Hello
+  permalink: /hello
+  description: Hello

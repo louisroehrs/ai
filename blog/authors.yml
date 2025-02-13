@@ -1,0 +1,14 @@
+roehrs:
+  name: Louis Roehrs
+  title: Architect
+  url: https://github.com/louisroehrs
+  image_url: https://media.licdn.com/dms/image/v2/D5603AQHj6aIHE45IcQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683128840744?e=1744848000&v=beta&t=cvP8kgJUm_Tlk2vm_DpXeptDmGajITeydg6wmm0xwy8
+  page: true
+  socials:
+    x: louisroehrs
+    github: louisroehrs
+    linkedin: louisroehrs
+#  page:
+    # customize the url of the author page at /blog/authors/<permalink>
+    # permalink: '/all-sebastien-lorber-articles'
+    
