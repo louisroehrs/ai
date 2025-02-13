@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Roehrs.ai Blog</title>
+        <link>https://roehrs.ai/blog</link>
+        <description>Roehrs.ai Blog</description>
+        <lastBuildDate>Thu, 06 Feb 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Dependency Chart]]></title>
+            <link>https://roehrs.ai/blog/dependency-chart-post</link>
+            <guid>https://roehrs.ai/blog/dependency-chart-post</guid>
+            <pubDate>Thu, 06 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Claude in action]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="claude-in-action">Claude in action<a href="https://roehrs.ai/blog/dependency-chart-post#claude-in-action" class="hash-link" aria-label="Direct link to Claude in action" title="Direct link to Claude in action">​</a></h3>
+<p>So I used the Cursor AI-assisted integrated development environment (IDE)  pointing to the claude-3.5-sonnet model and asked it to build a dependency diagram example.  We have a big project at work and am looking to map out all the dependencies like a king.  Well, claude wrote the code like a king and it worked first try.</p>
+<p>I asked it to give me layout options and it did that as well.</p>
+<p>More on Cursor later.</p>
+<p><img decoding="async" loading="lazy" alt="Dependency Chart" src="https://roehrs.ai/assets/images/dchart-188b5437baaea7d8d98adc7b7d4c08f0.png" width="953" height="765" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="prompt">Prompt<a href="https://roehrs.ai/blog/dependency-chart-post#prompt" class="hash-link" aria-label="Direct link to Prompt" title="Direct link to Prompt">​</a></h3>
+<p>Write a program that will take a list of items and dependencies to produce a graph showing the items with relation to their dependencies.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="code">Code<a href="https://roehrs.ai/blog/dependency-chart-post#code" class="hash-link" aria-label="Direct link to Code" title="Direct link to Code">​</a></h3>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">import networkx as nx</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">import matplotlib.pyplot as plt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">def create_dependency_graph(dependencies):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    """</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Create and visualize a directed graph from a dictionary of dependencies.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Args:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        dependencies (dict): Dictionary where keys are items and values are lists of dependencies</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    """</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    # Create a directed graph</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    G = nx.DiGraph()</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    # Add nodes and edges from the dependencies</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    for item, deps in dependencies.items():</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        # Add the main item if it doesn't exist</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        if item not in G:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            G.add_node(item)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        # Add dependencies and edges</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        for dep in deps:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            if dep not in G:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                G.add_node(dep)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            G.add_edge(dep, item)  # Arrow points from dependency to dependent item</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    # Create the visualization</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    plt.figure(figsize=(10, 8))</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    pos = nx.spring_layout(G)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    # Draw the graph</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    nx.draw(G, pos, with_labels=True, node_color='lightblue', </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            node_size=2000, arrowsize=20, </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            font_size=10, font_weight='bold')</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    plt.title("Dependency Graph")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    plt.show()</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-usage">Example usage<a href="https://roehrs.ai/blog/dependency-chart-post#example-usage" class="hash-link" aria-label="Direct link to Example usage" title="Direct link to Example usage">​</a></h3>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">if __name__ == "__main__":</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    # Example dependencies dictionary</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    dependencies = {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        'A': ['B', 'C'],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        'B': ['D'],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        'C': ['D', 'E'],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        'D': ['E'],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        'E': []</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">create_dependency_graph(dependencies)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
+            <title><![CDATA[DeepSeek Snake]]></title>
+            <link>https://roehrs.ai/blog/deepseek-snake-post</link>
+            <guid>https://roehrs.ai/blog/deepseek-snake-post</guid>
+            <pubDate>Tue, 23 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Let's play a game.]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lets-play-a-game">Let's play a game.<a href="https://roehrs.ai/blog/deepseek-snake-post#lets-play-a-game" class="hash-link" aria-label="Direct link to Let's play a game." title="Direct link to Let's play a game.">​</a></h3>
+<p>I decided to see how well DeepSeek writes a basic snake game in JavaScript.   While it understood the concept well with a minimum of prompting, it didn't do as well with the code even though it provided the following instructions once it finished coding.</p>
+<p>First, the game didn't run at all.  Variable scoping was confused with variables in functions referring to those in other functions as if they were global.  To get the game to run, I made those variables global.</p>
+<p>It was not very familiar with the ctx and HTML canvas API, applying size attributes on the wrong element and hallucinating some non-existent API calls to get the canvas size.  I changed the code to set the canvas size to a given x,y size scaled by a settable scale.</p>
+<p>It was also referring to the canvas width and height as strings and trying to do math with them.  Removed quotes to fix those instances.</p>
+<p>It completely failed to put in event handling code for the key presses.  I added that.</p>
+<p>It stopped when it found food.  I fixed that as well.</p>
+<p>A neat feature that it did add which worked right away was that the snake grew with alternating color segments.</p>
+<p>Collision with itself was not discussed and not coded.</p>
+<p>Anyhow, enjoy!</p>
+<p>The game is simple but demonstrates basic game mechanics and controls in JavaScript.</p>]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
+            <title><![CDATA[Neural Networks]]></title>
+            <link>https://roehrs.ai/blog/neural-networks-post</link>
+            <guid>https://roehrs.ai/blog/neural-networks-post</guid>
+            <pubDate>Wed, 15 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Neural Networks]]></description>
+            <content:encoded><![CDATA[<p>Neural Networks</p>
+<p><img decoding="async" loading="lazy" alt="Bryce Canyon National Park" src="https://roehrs.ai/assets/images/bryce-canyon-98430b8f4e254c9e8cc8ab4bbacd57a9.jpg" width="300" height="200" class="img_ev3q"></p>]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
+            <title><![CDATA[Fuzzy Logic]]></title>
+            <link>https://roehrs.ai/blog/fuzzy-logic-post</link>
+            <guid>https://roehrs.ai/blog/fuzzy-logic-post</guid>
+            <pubDate>Wed, 15 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fuzzy Logic]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" src="https://cdn.hackr.io/uploads/posts/attachments/1667299624QZZmuHDQG7.png" alt="Fuzzy Logic" class="img_ev3q"></p>]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
+            <title><![CDATA[Boolean Logic]]></title>
+            <link>https://roehrs.ai/blog/boolean-logic-post</link>
+            <guid>https://roehrs.ai/blog/boolean-logic-post</guid>
+            <pubDate>Sun, 15 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Boolean logic hello]]></description>
+            <content:encoded><![CDATA[<p>Boolean logic hello</p>
+<p>Do i need more text?</p>]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://roehrs.ai/blog/welcome</link>
+            <guid>https://roehrs.ai/blog/welcome</guid>
+            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
+<p>Here are a few tips you might find useful.</p>
+<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
+<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
+<p>The blog post date can be extracted from filenames, such as:</p>
+<ul>
+<li><code>2019-05-30-welcome.md</code></li>
+<li><code>2019-05-30-welcome/index.md</code></li>
+</ul>
+<p>A blog post folder can be convenient to co-locate blog post images:</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://roehrs.ai/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
+<p>The blog supports tags as well!</p>
+<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
+            <category>AI</category>
+            <category>Hello</category>
+        </item>
+        <item>
+            <title><![CDATA[MDX Blog Post]]></title>
+            <link>https://roehrs.ai/blog/mdx-blog-post</link>
+            <guid>https://roehrs.ai/blog/mdx-blog-post</guid>
+            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
+            <content:encoded><![CDATA[<div><p>Current count: <!-- -->0</p><button>Increase</button></div>]]></content:encoded>
+            <category>docusaurus</category>
+        </item>
+    </channel>
+</rss>

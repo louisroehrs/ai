@@ -9,9 +9,6 @@ activate/
 # Dependencies
 /node_modules
 
-# Production
-/docs
-
 # Generated files
 .docusaurus
 .cache-loader
