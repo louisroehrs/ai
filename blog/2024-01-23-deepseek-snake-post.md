@@ -29,4 +29,4 @@ Anyhow, enjoy!
 
 The game is simple but demonstrates basic game mechanics and controls in JavaScript.
 
-To see the game in action, click [DeepSeek Snake Game](/deepseek_snake.html)
+

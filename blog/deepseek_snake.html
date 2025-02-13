@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+</head>
+<body>
+
+  <p>Click start to start the game.</p>
+  <p>Use the arrow keys to navigate the snake.</p>
+  <p>Note the delay and hit detection are not right</p>
+  
+    <button id="startBtn">Start</button>
+    <button id="startBtn2" disabled>Stop</button>
+    <canvas id="gameCanvas"></canvas>
+
+    <script>
+        const canvasId = 'gameCanvas';
+        let ctx; // changed from const
+        const scale = 20;
+        const xSize =20, ySize=20;
+        const width = xSize * scale;
+        const height = ySize * scale;
+        let snake, foodX, foodY, dx, dy, gameLoop; // added
+        let gameover = false;
+
+        function init() {
+            const startBtn = document.getElementById('startBtn');
+            startBtn.addEventListener('click', startGame);
+
+            const gameCanvas = document.getElementById('gameCanvas');
+            gameCanvas.width = width;
+            gameCanvas.height = height;
+            gameCanvas.setAttribute('id', canvasId);
+            ctx = gameCanvas.getContext('2d');
+            
+
+            if (!ctx) {
+                alert('Cannot create canvas element. Please check your browser settings.');
+                return;
+            }
+        }
+
+        function startGame() {
+            gameover = false;       
+            document.getElementById('startBtn').disabled = true;
+            const startBtn2 = document.getElementById('startBtn2')
+            startBtn2.onclick = stopGame;
+
+          
+            document.getElementById('startBtn2').disabled = false;
+
+            // Initialize game state
+            //  x and y are dec/incremented by 1, drawing is scaled by scale
+            snake = ['0:0'];
+            foodX = 0; //Math.floor(xSize/2);
+            foodY =  Math.floor(ySize/2);
+            dx = 0, dy = -1;
+            gameLoop = setInterval(drawGame, 300);
+        }
+
+        function stopGame() {
+            clearInterval(gameLoop);
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('startBtn2').disabled = true;
+        }
+
+        function drawGame() {
+            if (gameover) return;
+            const gameCanvasEl = document.getElementById('gameCanvas')
+            gameCanvasEl.style.border = '1px solid red';
+
+            const ctx = gameCanvasEl.getContext('2d');
+
+            // Clear canvas
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0,  width,  height);
+
+            // Draw grid (optional)
+            for (let i = 0; i <  width / scale; i++) {
+              ctx.beginPath();
+              ctx.strokeStyle = "white";
+                ctx.moveTo(i * scale, 0);
+                ctx.lineTo(i * scale,  height);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(0, i * scale);
+                ctx.lineTo( width, i * scale);
+                ctx.stroke();
+            }
+
+            // Draw snake
+            for (let i = 0; i < snake.length; i++) {
+                const x = parseInt(snake[i].split(':')[0]) * scale;
+                const y = parseInt(snake[i].split(':')[1]) * scale;
+
+                if (x >  width || y >  height) {
+                    continue;
+                }
+
+                ctx.fillStyle = i % 2 === 0 ? '#4CAF50' : '#2196F3';
+                ctx.fillRect(x, y, scale - 1, scale - 1);
+            }
+
+            if (foodX >  width || foodY >  height) {
+              alert("food too big");
+            }
+
+            ctx.fillStyle = '#FF4500';
+            ctx.fillRect(foodX * scale, foodY * scale, scale - 1, scale - 1);
+
+            // Move snake
+            const head = { x: parseInt(snake[0].split(':')[0]), y: parseInt(snake[0].split(':')[1]) };
+            
+            switch (dx) {
+                case 0:
+                    break;
+                case -1:
+                    head.x++;
+                    break;
+                case 1:
+                    head.x--;
+                    break;
+            }
+
+            switch (dy) {
+                case 0:
+                    break;
+                case -1:
+                    head.y++;
+                    break;
+                case 1:
+                    head.y--;
+                    break;
+            }
+
+            // Check if snake hits the wall
+            if (head.x < 0 || head.x > xSize || head.y < 0 || head.y > ySize ) {
+                gameover = true;
+                clearInterval(gameLoop);
+                document.getElementById('startBtn').disabled = false;
+                alert("Game Over");
+  
+            } else {
+                snake.unshift(head.x.toString() + ':' + head.y.toString());
+            }
+
+            // Check if snake ate food
+            if (head.x === foodX && head.y === foodY) {
+                foodX = Math.floor(Math.random() * xSize);
+                foodY = Math.floor(Math.random() * ySize);
+            } else {
+                snake.pop();
+            }
+        }
+      document.addEventListener('keydown', function(event) {
+          switch (event.key) {
+          case 'ArrowUp':
+            // Set vertical moving down
+            dx = 0;
+            dy = 1;
+            break;
+          case 'ArrowDown':
+            // Set vertical moving up
+            dx = 0;
+            dy = -1;
+            break;
+          case 'ArrowLeft':
+            // Set horizontal moving left
+            dy = 0;
+            dx = 1;
+            break;
+          case 'ArrowRight':
+            // Set horizontal moving right
+            dy = 0;
+            dx = -1;
+            break;
+          }
+        });
+
+        init();    
+    </script>
+</body>
+</html>
