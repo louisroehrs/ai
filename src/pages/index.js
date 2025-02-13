@@ -36,7 +36,8 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        Welcome to this new little site where we will explain AI and keep track of the top trends.
+
       </main>
     </Layout>
   );
