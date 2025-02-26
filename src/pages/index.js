@@ -36,8 +36,14 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        Welcome to this new little site where we will explain AI and keep track of the top trends.
-
+      <div className="container text--center text--primary text--bold" style={{ padding: 40,'align-items':'stretch'}} >
+      Generative AI Is providing an impressive amount of capability for augmenting workstreams, thinking, creating, and more based off the entire available digitized knowledge on the planets.  The current main skill to learn is prompting.  You can simply ask AIs questions and get answers. To really tap into their superpowers, learning prompting skills is key.  We are beginning a blog series on prompting.
+      <div className="container row" style={{gap:20, padding:20, 'justify-content':'space-between'}}>
+      <Link to="blog/boolean-logic-post"><img className="card" src="/img/image.jpg"></img>AI Origins</Link>
+      <Link to="/blog/advanced-prompt-engineering-strategies"><img  className="card" src="/img/image-2.jpg"></img>Prompting</Link>
+      <Link to="https://github.com/louisroehrs"><img  className="card" src="/img/image-3.jpg"></img>The Future</Link>
+      </div>
+      </div>
       </main>
     </Layout>
   );
