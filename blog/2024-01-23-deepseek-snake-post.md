@@ -25,7 +25,7 @@ A neat feature that it did add which worked right away was that the snake grew w
 
 Collision with itself was not discussed and not coded.
 
-Anyhow, enjoy!
+Anyhow, enjoy <a href="/deepseeksnake/"><b> DeepSeek Snake by clicking here. </b></a>
 
 The game is simple but demonstrates basic game mechanics and controls in JavaScript.
 

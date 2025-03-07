@@ -25,7 +25,7 @@ const config = {
   organizationName: 'louisroehrs', // Usually your GitHub org/user name.
   projectName: 'ai', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -35,6 +35,8 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  staticDirectories: ['static'],
 
   presets: [
     [
@@ -51,6 +53,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarCount: 15,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -78,7 +81,7 @@ const config = {
       navbar: {
         title: 'Roehrs.ai',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Roehrs AI Logo',
           src: 'img/logo.png',
         },
         items: [
