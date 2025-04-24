@@ -15,6 +15,9 @@ The interviewee replies with "I play tennis."
 
 In peak, competitive, tech-bro, prove-it attitude, the interviewer fires off "What's your UTR?"
 
+
+WHAT .... IS YOUR FAVORITE COLOR?
+
 I'm knocked back.  The interviewee is stunned.  A comic comes to mind in my head and I can't draw for shit.
 
 <!-- truncate -->
