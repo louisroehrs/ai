@@ -4,10 +4,43 @@
         <title>Roehrs.ai Blog</title>
         <link>https://roehrs.ai/blog</link>
         <description>Roehrs.ai Blog</description>
-        <lastBuildDate>Thu, 03 Apr 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Apr 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[AI Makes a Comic 5 Minutes After the Conversation Happens]]></title>
+            <link>https://roehrs.ai/blog/tennis-comic</link>
+            <guid>https://roehrs.ai/blog/tennis-comic</guid>
+            <pubDate>Thu, 24 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[AI Makes a Comic 5 Minutes After the Conversation Happenst]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ai-makes-a-comic-5-minutes-after-the-conversation-happenst">AI Makes a Comic 5 Minutes After the Conversation Happenst<a href="https://roehrs.ai/blog/tennis-comic#ai-makes-a-comic-5-minutes-after-the-conversation-happenst" class="hash-link" aria-label="Direct link to AI Makes a Comic 5 Minutes After the Conversation Happenst" title="Direct link to AI Makes a Comic 5 Minutes After the Conversation Happenst">​</a></h3>
+<p>Ok, this is absolutely insane.  I overheard this loud interview in a popular Palo Alto Coffeeshop known for caffeinating heavy hitters, tech bros and sisters.</p>
+<p>The interviewer breaks the ice with a nice causal "What do you do for fun?."</p>
+<p>The interviewee replies with "I play tennis."</p>
+<p>In peak, competitive, tech-bro, prove-it attitude, the interviewer fires off "What's your UTR?"</p>
+<p>I'm knocked back.  The interviewee is stunned.  A comic comes to mind in my head and I can't draw for shit.</p>
+<p>UTR?  What's that? I quickly google it as I used to play tennis casually.  Well, it turns out there's an app for that, it's called the Universal Tennis Rating and you can sign up to compete and find out your UTR at <a href="https://www.utrsports.net/pages/how-utr-works" target="_blank" rel="noopener noreferrer">https://www.utrsports.net/pages/how-utr-works</a>.</p>
+<p>OK.  So I heard ChatGPT has cooked on image generation.  Let's check it out.</p>
+<p>Let's do a quick prompt.  This is all one shot it here is the chat where it happened... <a href="https://chatgpt.com/share/680aaa72-938c-800f-9f5a-c4e883e5c3d5" target="_blank" rel="noopener noreferrer">https://chatgpt.com/share/680aaa72-938c-800f-9f5a-c4e883e5c3d5</a></p>
+<p>I ask it, "Make a cartoon where one guy asks the other what he does for fun.  The other guy answers "I play Tennis".  Then the first guy asks "What's your UTR?".  Then show the second guy going up in flames"</p>
+<p>It thinks for a bit and responds with:</p>
+<p><img decoding="async" loading="lazy" alt="ChatGPT Response" src="https://roehrs.ai/assets/images/chatgpt-tennis-comic-02064b76c21f28b41c098b5467989e6c.png" width="1024" height="1536" class="img_ev3q"></p>
+<p>HOLY COW!  It nailed it!</p>
+<p>Exactly the effect I was looking for!  Text is correct, the only issue I have is the right panels have the character facing the wrong way.  That's easy to fix.</p>
+<p>I went ahead and loaded the image into Apple Preview and flipped the character to make it like so.</p>
+<p>Boom.  Done.  I even told ChatGPT I was happy with the result.</p>
+<p>"nailed it!"</p>
+<p>And then ChatGPT must have heard me laughing at how amazing and funny this is.</p>
+<p>"Haha, glad you liked it! Let me know if you want to make another one—could go deep with tennis trauma comics 😄🎾🔥"</p>
+<p>Tennis trauma!  Just hilarious!</p>
+<p>As of this typing, the interview is not even a half hour in!</p>
+<p>This is how fast life can move with AI!</p>
+<p><img decoding="async" loading="lazy" alt="Final image with character flipped" src="https://roehrs.ai/assets/images/chatgpt-tennis-comic-final-bc6c85e22f9ac26b68bd2a6d580b634a.png" width="1024" height="1536" class="img_ev3q"></p>
+<p>Enjoy!</p>]]></content:encoded>
+            <category>AI</category>
+            <category>comics</category>
+        </item>
         <item>
             <title><![CDATA[Mandelbrot with WebGPU]]></title>
             <link>https://roehrs.ai/blog/mandelbrot</link>
