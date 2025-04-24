@@ -59,3 +59,7 @@ This is how fast life can move with AI!
 
 Enjoy!
 
+By the way, if you want to see the actual photographic proof of the comic on screen with the interview in the background, contact me for a speaking engagement where I entertain your audience with many Stories of the Valley going back to the 80's!
+
+
+
