@@ -348,6 +348,33 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
             <category>AI</category>
         </item>
         <item>
+            <title><![CDATA[Traveling the world and trying to npm a webapp on a slow connection?]]></title>
+            <link>https://roehrs.ai/blog/slow-npm-post</link>
+            <guid>https://roehrs.ai/blog/slow-npm-post</guid>
+            <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[How To Fix NPM Timeout Errors On Slow Internet Connections]]></description>
+            <content:encoded><![CDATA[<p><strong>How To Fix NPM Timeout Errors On Slow Internet Connections</strong></p>
+<p>Is npx create-react-app failing with timeouts while you are on a good old fashioned copper connection?</p>
+<p>Sometimes when we work with slow or unstable Internet connections, <strong>npm</strong> often fails to complete its commands, like <strong>npm install</strong> and <strong>npm update</strong> with a timeout error. For that kind of situation, we can simply change some <strong>npm</strong> configurations like <strong>fetch-retries</strong>, <strong>fetch-retry-mintimeout</strong>, <strong>fetch-retry-maxtimeout</strong> and <strong>cache-min</strong> to minimize these timeout errors.</p>
+<p><strong>fetch-retries</strong></p>
+<p>This config controls the number of times&nbsp;npm&nbsp;try to connect to the registry when fetching packages. The default value is&nbsp;2, but you can increase it to 3~5 or even more if you like. Open a terminal window and run the following command with the desired number of retries at the end.</p>
+<p><code>npm config set fetch-retries 3</code></p>
+<p><strong>fetch-retry-mintimeout</strong></p>
+<p>This config controls the minimum time (in milliseconds) npm waits before timing out when fetching packages from the registry. The default value is 10000 milliseconds (10 seconds), change it to 100000 or more.</p>
+<p><code>npm config set fetch-retry-mintimeout 100000</code></p>
+<p><strong>fetch-retry-maxtimeout</strong></p>
+<p>This config controls the maximum time (in milliseconds) npm waits before timing out when fetching packages from the registry. The default value is 10000 milliseconds (10 seconds), change it to 600000 or more.</p>
+<p><code>npm config set fetch-retry-maxtimeout 600000</code></p>
+<p><strong>cache-min</strong></p>
+<p>This config controls the minimum time (in seconds) to keep items before re-checking the registry. The default value is 10 seconds, change it to 3600 seconds (1 hour) or more.</p>
+<p><code>npm config set cache-min 3600</code></p>
+<p>Finally, run the following command to check whether all the configuration changes are successfully applied or not.</p>
+<p><code>npm config ls -l</code></p>
+<p>Now try to run some failing commands to check whether they are working. The duration values mentioned in this question was only for demonstration, you may try different values by increasing and decreasing them according to your situation. Visit <a href="https://docs.npmjs.com/cli/v7/commands/npm-config" target="_blank" rel="noopener noreferrer">npm-config</a> documentation for more available configurations.</p>
+<p>See <a href="https://docs.npmjs.com/cli/v7/commands/npm-config" target="_blank" rel="noopener noreferrer">https://docs.npmjs.com/cli/v7/commands/npm-config</a> for more details.</p>]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://roehrs.ai/blog/welcome</link>
             <guid>https://roehrs.ai/blog/welcome</guid>
@@ -485,19 +512,6 @@ The app uses natural language processing and machine learning to intelligently a
 <p><a href="http://mashable.com/2015/11/18/ibm-watson-trend-app/" target="_blank" rel="noopener noreferrer">Mashable: IBM Watson’s new app predicts the must-have toys and gifts</a></p>
 <p><a href="http://www.theatlantic.com/sponsored/ibm-how-technology-transforms-2/your-new-personal-shopping-assistant/729/" target="_blank" rel="noopener noreferrer">The Atlantic: YOUR NEW PERSONAL SHOPPING ASSISTANT</a></p>
 <p><a href="https://venturebeat.com/2015/11/18/ibms-new-app-taps-watson-to-tell-you-what-products-might-sell-out-for-christmas/" target="_blank" rel="noopener noreferrer">VentureBeat: IBM’s new app taps Watson to tell you which products might sell out for Christmas</a></p>]]></content:encoded>
-            <category>AI</category>
-        </item>
-        <item>
-            <title><![CDATA[Be a Holiday Hero with IBM Watson Trend]]></title>
-            <link>https://roehrs.ai/blog/holiday-hero-post</link>
-            <guid>https://roehrs.ai/blog/holiday-hero-post</guid>
-            <pubDate>Wed, 18 Nov 2015 00:00:00 GMT</pubDate>
-            <description><![CDATA[Get this.  We made an really cool AI app and now there is the best video!  The marketing department knew I had twin daughters.  Totally nailed it.]]></description>
-            <content:encoded><![CDATA[<p>Get this.  We made an really cool AI app and now there is the best video!  The marketing department knew I had twin daughters.  Totally nailed it.</p>
-<p>You can watch it at <a href="https://www.youtube.com/watch?v=uNW9xhQvKI8" target="_blank" rel="noopener noreferrer">YouTube</a>.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uNW9xhQvKI8?si=jKc77QB2Gy9wt3EV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<p>The app is now available in both the Apple App Store and Google Play Store and at <a href="https://www.ibmwatsontrend.com/" target="_blank" rel="noopener noreferrer">https://www.ibmwatsontrend.com</a></p>
-<p>We love the beauticorns!</p>]]></content:encoded>
             <category>AI</category>
         </item>
     </channel>
