@@ -432,7 +432,7 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
         <updated>2017-07-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We can use the GPUs and some trignometric functions to make a digital, real-time lava lamp. If you only see a black square, try a different browser that supports WebGL and be sure to turn on the WebGL support for your browser.]]></summary>
         <content type="html"><![CDATA[<p>We can use the GPUs and some trignometric functions to make a digital, real-time lava lamp. If you only see a black square, try a different browser that supports WebGL and be sure to turn on the WebGL support for your browser.</p>
-<iframe src="/lavalamp" height="1000" width="600"></iframe>]]></content>
+<iframe src="/lavalamp" height="400" width="400"></iframe>]]></content>
         <author>
             <name>Louis Roehrs</name>
             <uri>https://github.com/louisroehrs</uri>
@@ -450,10 +450,7 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
 <p>This Mandlebrot set is being displayed in your browser using your GPU. This is not a movie. It is being calculated and rendered in realtime. If you only see a black square, try a different browser that supports WebGL and be sure to turn on the WebGL support for your browser. If only Benoit Mandlebrot, an IBMer, had a GPU on which to run his JavaScript code. </p>
 <p>We can build a gpu kernal which simply provides the GPU with the code in JavaScript to tell the GPU what color to set the pixel at the given x, y coordinate and bind it to an HTML canvas.</p>
 <p>Get this.  It will even run on an AppleWatch!</p>
-<iframe src="/mandelbrot/" height="1000" width="600"></iframe>
-<a href="https://roehrs.ai/mandelbrot/">Click the image to run it.<br><img decoding="async" loading="lazy" alt="Mandelbrot in the Browser" src="https://roehrs.ai/assets/images/mandelbrot-8834de4531e2fb00d12c26b18b66ac25.png" width="310" height="342" class="img_ev3q"></a>
-<br>
-<a href="https://roehrs.ai/mandelbrot/fullscreen.html">GO BIG!</a>
+<iframe src="/mandelbrot/" height="400" width="400"></iframe>
 <p>Here is the code.  This was written pre-AI coding tools.
 Set up an HTML page like so.</p>
 <p><em>index.html</em></p>
