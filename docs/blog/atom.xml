@@ -453,6 +453,23 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
         <category label="docusaurus" term="docusaurus"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Be a Holiday Hero with IBM Watson Trend]]></title>
+        <id>https://roehrs.ai/blog/holiday-hero-post</id>
+        <link href="https://roehrs.ai/blog/holiday-hero-post"/>
+        <updated>2015-11-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Get this.  We made an really cool AI app and now there is the best video!  The marketing department knew I had twin daughters.  Totally nailed it.]]></summary>
+        <content type="html"><![CDATA[<p>Get this.  We made an really cool AI app and now there is the best video!  The marketing department knew I had twin daughters.  Totally nailed it.</p>
+<p>You can watch it at <a href="https://www.youtube.com/watch?v=uNW9xhQvKI8" target="_blank" rel="noopener noreferrer">YouTube</a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uNW9xhQvKI8?si=jKc77QB2Gy9wt3EV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<p>The app is now available in both the Apple App Store and Google Play Store and at <a href="https://www.ibmwatsontrend.com/" target="_blank" rel="noopener noreferrer">https://www.ibmwatsontrend.com</a></p>
+<p>We love the beauticorns!</p>]]></content>
+        <author>
+            <name>Louis Roehrs</name>
+            <uri>https://github.com/louisroehrs</uri>
+        </author>
+        <category label="AI" term="AI"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[IBM Watson Trend is now in the Apple App Store!]]></title>
         <id>https://roehrs.ai/blog/ibm-watson-trend-post</id>
         <link href="https://roehrs.ai/blog/ibm-watson-trend-post"/>
