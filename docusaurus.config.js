@@ -94,6 +94,7 @@ const config = {
           }, */
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/patents', label: 'Patents', position: 'left'},
+          {to: '/contact', label: 'Contact', position: 'left'},
           {
             href: 'https://github.com/louisroehrs',
             label: 'GitHub',
@@ -105,11 +106,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Patents',
+            title: 'About',
             items: [
               {
                 label: 'Patents',
                 to: '/patents/intro',
+              },
+              {
+                label: 'Contact',
+                to: '/contact',
               },
             ],
           },
@@ -123,6 +128,10 @@ const config = {
               {
                 label: 'X',
                 href: 'https://x.com/louisroehrs',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/louisroehrs',
               },
             ],
           },
@@ -140,7 +149,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2023 - ${new Date().getFullYear()} Louis F, Roehrs. Built by humans.`,
+        copyright: `Copyright © 2001 - ${new Date().getFullYear()} Louis F, Roehrs. Built by humans.`,
       },
       prism: {
         theme: prismThemes.github,
