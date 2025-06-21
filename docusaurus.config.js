@@ -93,6 +93,7 @@ const config = {
             label: 'Tutorial',
           }, */
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/patents', label: 'Patents', position: 'left'},
           {
             href: 'https://github.com/louisroehrs',
             label: 'GitHub',
@@ -102,16 +103,16 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [/**
+        links: [
           {
-            title: 'Docs',
+            title: 'Patents',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Patents',
+                to: '/patents/intro',
               },
             ],
-          },*/
+          },
           {
             title: 'Community',
             items: [
