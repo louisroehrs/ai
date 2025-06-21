@@ -348,6 +348,42 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
             <category>AI</category>
         </item>
         <item>
+            <title><![CDATA[AI teamwork Using the output of ChatGPT to generate DALL-E2 art.]]></title>
+            <link>https://roehrs.ai/blog/ai-teamwork-chatgpt-dall-post</link>
+            <guid>https://roehrs.ai/blog/ai-teamwork-chatgpt-dall-post</guid>
+            <pubDate>Mon, 05 Dec 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[What would happen if I chained two AIs together to work as a team?]]></description>
+            <content:encoded><![CDATA[<p><strong>What would happen if I chained two AIs together to work as a team?</strong></p>
+<img src="https://roehrs.ai/blogimg/chatdall/DallE4.png" alt="drawing" width="200">
+<p>ChatGPT is a conversationAI at chat.openai.com that can generate answers to questions or produce detailed descriptions given minimal input. DALL-E 2 creates art from elaborate textual descriptions.</p>
+<p>So I asked ChatGPT to:</p>
+<blockquote>
+<p>Describe a business scene with people collaborating on a piece of art.</p>
+</blockquote>
+<p>It responded with:</p>
+<blockquote>
+<p>In a bustling art studio, a team of talented artists are collaborating on a large-scale piece of art. They are all working together, sharing ideas and techniques, and using their individual strengths to bring the piece to life. Some are sketching out rough drafts and ideas on paper, while others are working on the more technical aspects of the piece, such as adding color or texture. There is a sense of excitement and creativity in the air, as the team works together to create something truly unique and beautiful. As the piece starts to take shape, the artists share their thoughts and feedback with each other, making tweaks and adjustments along the way to ensure that the final product is exactly what they envision. In the end, the team is able to create a stunning piece of art that they are all proud of, thanks to their collaboration and dedication to the project.</p>
+</blockquote>
+<p>I pushed this output, at least what would fit, into DALL-E 2 and it generated a few options. You can be the judge of how well these images meet the original request. With DALL-E 2, you can ask for variations of each of the original images to continue exploring for the image that fits the bill. As to “business scene” in the original request, I think the third image below come closest, although I do find the appearance of the craftsman’s apron fascinating in the second image. The implications for the future are astounding for AI as a creative tool.</p>
+<img src="https://roehrs.ai/blogimg/chatdall/DallE1.png" alt="drawing" width="300">
+<img src="https://roehrs.ai/blogimg/chatdall/DallE2.png" alt="drawing" width="300">
+<img src="https://roehrs.ai/blogimg/chatdall/DallE3.png" alt="drawing" width="300">]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
+            <title><![CDATA[Sometimes you gotta go old school]]></title>
+            <link>https://roehrs.ai/blog/old-school-post</link>
+            <guid>https://roehrs.ai/blog/old-school-post</guid>
+            <pubDate>Fri, 02 Dec 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lost your headphones?]]></description>
+            <content:encoded><![CDATA[<p><strong>Lost your headphones?</strong></p>
+<p><img decoding="async" loading="lazy" alt="Yes, this handset works!" src="https://roehrs.ai/assets/images/louis-handset-f9da168e19f658cce65ed9b9bc0054d4.jpeg" width="768" height="1365" class="img_ev3q"></p>
+<p>I forgot my high-tech Bluetooth headphones and had to reach for this handset. The sound quality is actually amazing and there is a whole additional benefit. People (at least Gen-X and boomers…and my kids!) get that I’m actually on the phone and talking to someone not in the room. Sometimes, this old tech provides the ambient information to others that is lost in our continually connected, wireless world. Combine with this with the Lightning to 3.5 mm Audio dongle from Apple, and you can use this with your iPhone, too. It works really well, can leave your phone in the pocket and people will know you are on the phone, even while walking down the street.</p>
+<p>Looking for your headphones, but they are too tiny to find? This big handset is much harder to lose under the bed, in the covers, or under the car seat.</p>
+<p>If you are looking for that On-Air indicator or looking for a way to notify others and let them know you are on a call or on the phone, I highly recommend picking up one of these today!</p>]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
             <title><![CDATA[Traveling the world and trying to npm a webapp on a slow connection?]]></title>
             <link>https://roehrs.ai/blog/slow-npm-post</link>
             <guid>https://roehrs.ai/blog/slow-npm-post</guid>
@@ -480,38 +516,6 @@ I do not see this type of technology as replacing humans with computers. Humans 
 The app uses natural language processing and machine learning to intelligently analyse millions of conversations across social networks, blogs, forums, comments, ratings and reviews. These information sources are curated into a real-time buyers guide, forecasting the products which will be ‘hot’ and forecasting consumer interest.”
 “It is a pleasing bundle of different content types which works well together as an editorial package.”
 “It’s intriguing stuff. Now, if only I could connect Watson Trend (so I know what to buy) to my Google Calendar (so I don’t miss a birthday) and then to Amazon (so I don’t have to go to the shops)… I might automate my way to becoming the best dad in the world.”</p>]]></content:encoded>
-            <category>AI</category>
-        </item>
-        <item>
-            <title><![CDATA[And a few more stories for IBM Watson Trend]]></title>
-            <link>https://roehrs.ai/blog/more-watson-trend-stories-post</link>
-            <guid>https://roehrs.ai/blog/more-watson-trend-stories-post</guid>
-            <pubDate>Sun, 27 Dec 2015 00:00:00 GMT</pubDate>
-            <description><![CDATA[We found a few more news stories about our incredible app.  Check them out.]]></description>
-            <content:encoded><![CDATA[<p>We found a few more news stories about our incredible app.  Check them out.</p>
-<p><a href="https://www.usatoday.com/story/tech/personal/2015/12/06/watson-app-helps-you-find-trendy-gifts/76721608/" target="_blank" rel="noopener noreferrer">USA Today: Watson app helps you find trendy gifts</a></p>]]></content:encoded>
-            <category>AI</category>
-        </item>
-        <item>
-            <title><![CDATA[IBM Watson Trend in the News]]></title>
-            <link>https://roehrs.ai/blog/watson-trend-news-post</link>
-            <guid>https://roehrs.ai/blog/watson-trend-news-post</guid>
-            <pubDate>Wed, 25 Nov 2015 00:00:00 GMT</pubDate>
-            <description><![CDATA[We have had an incredible amount of coverage for the application my team built. Nice to see after running daily meetings and running really fast for the last four months!]]></description>
-            <content:encoded><![CDATA[<p>We have had an incredible amount of coverage for the application my team built. Nice to see after running daily meetings and running really fast for the last four months!</p>
-<p><a href="http://www.zdnet.com/article/ibms-watson-trend-app-may-popularize-analytics/" target="_blank" rel="noopener noreferrer">ZDNet: IBM’s Watson Trend App may popularize analytics</a> It did!</p>
-<p><a href="http://www.prnewswire.com/news-releases/ibms-watson-predicts-the-top-products-and-trends-for-black-friday-300184954.html" target="_blank" rel="noopener noreferrer">PRNewsWire: IBM’s Watson Predicts the Top Products and Trends for Black Friday</a></p>
-<p><a href="https://www.forbes.com/sites/kimberlywhitler/2015/11/18/the-hot-products-for-holiday-2015-ibm-watson-launches-new-app-that-can-predict-trends/" target="_blank" rel="noopener noreferrer">Forbes: The Hot Products For Holiday 2015: IBM Watson Launches New App That Can Predict Trends</a></p>
-<p><a href="https://www.fastcompany.com/3053729/its-making-a-list-ibms-watson-will-predict-this-holidays-top-gifts" target="_blank" rel="noopener noreferrer">FastCompany: “It’s making a list…” IBM’s Watson Will Predict This Holiday’s Top Gifts</a> It made a ton of lists…</p>
-<p><a href="http://www.investors.com/news/technology/ibm-watson-trend-apple-watch-hot-holidays/" target="_blank" rel="noopener noreferrer">Investors Business Daily: IBM’s Watson Says Apple Watch Tops Holiday Hot List</a></p>
-<p><a href="http://fortune.com/2015/11/18/ibm-watson-holiday-shopping/" target="_blank" rel="noopener noreferrer">Fortune: IBM supercomputer predicts what to buy and when this holiday season</a></p>
-<p><a href="https://www.predictiveanalyticstoday.com/ibm-watson-trend-app-forecasts-trends-and-products-for-holiday-season/" target="_blank" rel="noopener noreferrer">Predictive Analytics Today: IBM Watson Trend App Forecasts Trends and Products for Holiday Season</a></p>
-<p><a href="http://adage.com/article/digital/ibm-watson-trend-app-shoppers-buy-legos/301398/" target="_blank" rel="noopener noreferrer">AdAge: IBM Watson Trend App to Shoppers: Buy Your Legos Now</a></p>
-<p><a href="http://www.informationweek.com/big-data/big-data-analytics/ibm-watson-trend-app-big-data-meets-holiday-shopping/d/d-id/1323192" target="_blank" rel="noopener noreferrer">Information Week: IBM Watson Trend App: Big Data Meets Holiday Shopping</a></p>
-<p><a href="https://www.washingtonpost.com/news/innovations/wp/2015/11/24/ibm-watson-tries-to-predict-the-biggest-holiday-shopping-trends/" target="_blank" rel="noopener noreferrer">The Washington Post: IBM Watson tries to predict the biggest holiday shopping trends</a></p>
-<p><a href="http://mashable.com/2015/11/18/ibm-watson-trend-app/" target="_blank" rel="noopener noreferrer">Mashable: IBM Watson’s new app predicts the must-have toys and gifts</a></p>
-<p><a href="http://www.theatlantic.com/sponsored/ibm-how-technology-transforms-2/your-new-personal-shopping-assistant/729/" target="_blank" rel="noopener noreferrer">The Atlantic: YOUR NEW PERSONAL SHOPPING ASSISTANT</a></p>
-<p><a href="https://venturebeat.com/2015/11/18/ibms-new-app-taps-watson-to-tell-you-what-products-might-sell-out-for-christmas/" target="_blank" rel="noopener noreferrer">VentureBeat: IBM’s new app taps Watson to tell you which products might sell out for Christmas</a></p>]]></content:encoded>
             <category>AI</category>
         </item>
     </channel>
