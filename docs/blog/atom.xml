@@ -453,6 +453,19 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
         <category label="docusaurus" term="docusaurus"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[IBM Watson Trend is now in the Apple App Store!]]></title>
+        <id>https://roehrs.ai/blog/ibm-watson-trend-post</id>
+        <link href="https://roehrs.ai/blog/ibm-watson-trend-post"/>
+        <updated>2015-11-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This summer I made a prototype of an app that tracks AND predicts trends and sentiment from social media to help advise shoppers of what to buy and for whom this Christmas. Since then, we assembled an amazing team and brought this vision to life in record time. It is November 11 and we have released our IBM Watson Trend application to the Apple App Store. Download and enjoy.]]></summary>
+        <content type="html"><![CDATA[<p>This summer I made a prototype of an app that tracks AND predicts trends and sentiment from social media to help advise shoppers of what to buy and for whom this Christmas. Since then, we assembled an amazing team and brought this vision to life in record time. It is November 11 and we have released our IBM Watson Trend application to the Apple App Store. Download and enjoy.</p>]]></content>
+        <author>
+            <name>Louis Roehrs</name>
+            <uri>https://github.com/louisroehrs</uri>
+        </author>
+        <category label="AI" term="AI"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hello]]></title>
         <id>https://roehrs.ai/blog/hello-post</id>
         <link href="https://roehrs.ai/blog/hello-post"/>
