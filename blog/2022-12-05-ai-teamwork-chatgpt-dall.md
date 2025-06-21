@@ -2,7 +2,7 @@
 slug: ai-teamwork-chatgpt-dall-post
 title: AI teamwork Using the output of ChatGPT to generate DALL-E2 art.
 authors: [roehrs]
-tags: [ai]
+tags: ['ai','art','technology','creative','agents']
 ---
 
 **What would happen if I chained two AIs together to work as a team?**

@@ -412,6 +412,10 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
             <uri>https://github.com/louisroehrs</uri>
         </author>
         <category label="AI" term="AI"/>
+        <category label="art" term="art"/>
+        <category label="technology" term="technology"/>
+        <category label="creative" term="creative"/>
+        <category label="agents" term="agents"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Sometimes you gotta go old school]]></title>
