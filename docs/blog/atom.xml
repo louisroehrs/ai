@@ -451,6 +451,9 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
 <p>We can build a gpu kernal which simply provides the GPU with the code in JavaScript to tell the GPU what color to set the pixel at the given x, y coordinate and bind it to an HTML canvas.</p>
 <p>Get this.  It will even run on an AppleWatch!</p>
 <iframe src="/mandelbrot/" height="400" width="400"></iframe>
+<br>
+<a href="https://roehrs.ai/mandelbrot/fullscreen.html">Full Screen</a>
+<br>
 <p>Here is the code.  This was written pre-AI coding tools.
 Set up an HTML page like so.</p>
 <p><em>index.html</em></p>
