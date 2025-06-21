@@ -452,4 +452,23 @@ Really, there’s no strict formula—just talk to it like you’re tossing idea
         </author>
         <category label="docusaurus" term="docusaurus"/>
     </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello]]></title>
+        <id>https://roehrs.ai/blog/hello-post</id>
+        <link href="https://roehrs.ai/blog/hello-post"/>
+        <updated>2015-07-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I work in IBM Watson Commerce Technical Strategy group. Recently I produced IBM Watson Trend and before that fathered IBM Commerce’s Universal Behavior Exchange that was sold to Acoustic.  I designed this product from vague pain points in the digital marketing world to create singular industry standard for moving behvavior information between 3,500 partners including Google Analytics and more.  Remember when the ads on the internet went from being totally irrelevant to being a little too scary accurate?  Acoustic Exchange is what happened....]]></summary>
+        <content type="html"><![CDATA[<p>I work in IBM Watson Commerce Technical Strategy group. Recently I produced IBM Watson Trend and before that fathered <a href="https://developer.goacoustic.com/acoustic-exchange/docs/acoustic-exchange-public-api-reference" target="_blank" rel="noopener noreferrer">IBM Commerce’s Universal Behavior Exchange</a> that was sold to Acoustic.  I designed this product from vague pain points in the digital marketing world to create singular industry standard for moving behvavior information between 3,500 partners including Google Analytics and more.  Remember when the ads on the internet went from being totally irrelevant to being a little too scary accurate?  Acoustic Exchange is what happened....</p>
+<p>Now I am working on a whole new way of looking at Site Search.</p>
+<p>I started my career at Apple Computer, Inc.</p>
+<p>At Apple, we taught machines all about humans.</p>
+<p>At IBM, I am helping teach machines how to learn and figure things out on their own.</p>
+<p>In former lives, I have worked with many Silicon Valley startups consulting and employed including Apple Computer, WebTV, women.com, match.com, and DemandTec. All were either acquired or had market cap explosions.</p>
+<p>Opinions expressed here are my own.</p>]]></content>
+        <author>
+            <name>Louis Roehrs</name>
+            <uri>https://github.com/louisroehrs</uri>
+        </author>
+        <category label="AI" term="AI"/>
+    </entry>
 </feed>
