@@ -3,16 +3,34 @@
  * and scoped locally.
  */
 
+/**
+ * Professional AI Consulting Homepage Styles
+ * Designed for high-value enterprise consulting positioning
+ */
+
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  color: white;
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 4rem 2rem;
   }
 }
 
@@ -20,4 +38,232 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Value Proposition Section */
+.valueProposition {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.valueProposition .lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0;
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.services .card {
+  height: 100%;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all var(--ifm-transition-fast);
+}
+
+.services .card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ifm-global-shadow-tl);
+}
+
+.services .card__header {
+  padding: 1.5rem 1.5rem 0;
+  border-bottom: none;
+}
+
+.services .card__header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.services .card__body {
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.services .card__body p {
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 1rem;
+}
+
+.services .card__body ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.services .card__body li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Featured Insights Section */
+.featuredInsights {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.featuredInsights .lead {
+  font-size: 1.125rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0;
+}
+
+.insightCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--ifm-transition-fast);
+}
+
+.insightCard:hover {
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-2px);
+}
+
+.insightCard .card {
+  height: 100%;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.insightCard .card__image {
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.insightCard .card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--ifm-transition-fast);
+}
+
+.insightCard:hover .card__image img {
+  transform: scale(1.05);
+}
+
+.insightCard .card__body {
+  padding: 1.5rem;
+}
+
+.insightCard .card__body h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.insightCard .card__body p {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.cta {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta .lead {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaButtons .button--primary {
+  background-color: white;
+  color: var(--ifm-color-primary);
+  border-color: white;
+}
+
+.ctaButtons .button--primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--ifm-color-primary-dark);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.ctaButtons .button--secondary {
+  background-color: transparent;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.ctaButtons .button--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .ctaButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .valueProposition,
+  .services,
+  .featuredInsights,
+  .cta {
+    padding: 3rem 0;
+  }
+  
+  .services .row,
+  .featuredInsights .row {
+    gap: 1.5rem;
+  }
+  
+  .services .col,
+  .featuredInsights .col {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Responsive grid adjustments */
+@media screen and (max-width: 996px) {
+  .services .col--4,
+  .featuredInsights .col--4 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services .col--4,
+  .featuredInsights .col--4 {
+    width: 100%;
+  }
 }

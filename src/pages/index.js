@@ -13,14 +13,25 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Strategic AI Implementation
+          <br />
+          <span className="text-gradient">for Enterprise Innovation</span>
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Transforming Fortune 500 companies and high-growth startups through 
+          strategic AI adoption that drives measurable business impact, 
+          operational efficiency, and competitive advantage.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/blog">
-            See the latest - 5min ⏱️
+            Explore AI Insights →
+          </Link>
+          <Link
+            className="button button--primary button--lg"
+            to="/contact">
+            Schedule Consultation
           </Link>
         </div>
       </div>
@@ -32,18 +43,174 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Louis Roehrs | AI Strategy & Innovation Consulting"
+      description="Strategic AI implementation consulting for enterprise innovation, cost optimization, and competitive advantage. Expert guidance for Fortune 500 companies and high-growth startups.">
       <HomepageHeader />
       <main>
-      <div className="container text--center text--primary text--bold" style={{ padding: 40,'align-items':'stretch'}} >
-      Generative AI Is providing an impressive amount of capability for augmenting workstreams, thinking, creating, and more based off the entire available digitized knowledge on the planets.  The current main skill to learn is prompting.  You can simply ask AIs questions and get answers. To really tap into their superpowers, learning prompting skills is key.  We are beginning a blog series on prompting.
-      <div className="container row" style={{gap:20, padding:20, 'justify-content':'space-between'}}>
-      <Link to="blog/boolean-logic-post"><img className="card" src="/img/image.jpg"></img>AI Origins</Link>
-      <Link to="/blog/advanced-prompt-engineering-strategies"><img  className="card" src="/img/image-2.jpg"></img>Prompting</Link>
-      <Link to="https://github.com/louisroehrs"><img  className="card" src="/img/image-3.jpg"></img>The Future</Link>
-      </div>
-      </div>
+        {/* Value Proposition Section */}
+        <section className={styles.valueProposition}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--8 col--offset-2 text--center">
+                <h2 className="text-gradient">Delivering Measurable Business Impact</h2>
+                <p className="lead">
+                  With over two decades of experience in AI and technology innovation, 
+                  I help organizations unlock the full potential of artificial intelligence 
+                  to achieve strategic objectives and drive sustainable growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Grid */}
+        <section className={styles.services}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--4">
+                <div className="card shadow-lg rounded-lg">
+                  <div className="card__header">
+                    <h3>🚀 AI Strategy & Roadmapping</h3>
+                  </div>
+                  <div className="card__body">
+                    <p>
+                      Comprehensive AI strategy development, technology assessment, 
+                      and implementation roadmaps aligned with business objectives 
+                      and ROI targets.
+                    </p>
+                    <ul>
+                      <li>Technology stack evaluation</li>
+                      <li>ROI analysis & business case development</li>
+                      <li>Change management planning</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col col--4">
+                <div className="card shadow-lg rounded-lg">
+                  <div className="card__header">
+                    <h3>⚡ Operational Efficiency</h3>
+                  </div>
+                  <div className="card__body">
+                    <p>
+                      Streamline operations and reduce costs through intelligent 
+                      automation, process optimization, and AI-powered decision support.
+                    </p>
+                    <ul>
+                      <li>Process automation & optimization</li>
+                      <li>Predictive analytics implementation</li>
+                      <li>Performance monitoring & optimization</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col col--4">
+                <div className="card shadow-lg rounded-lg">
+                  <div className="card__header">
+                    <h3>🎯 Innovation Acceleration</h3>
+                  </div>
+                  <div className="card__body">
+                    <p>
+                      Accelerate product development and market innovation through 
+                      cutting-edge AI technologies and strategic partnerships.
+                    </p>
+                    <ul>
+                      <li>Product innovation strategy</li>
+                      <li>AI-powered feature development</li>
+                      <li>Market differentiation tactics</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Insights */}
+        <section className={styles.featuredInsights}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--12 text--center">
+                <h2>Latest AI Insights & Thought Leadership</h2>
+                <p className="lead">
+                  Stay ahead of the curve with expert analysis on AI trends, 
+                  implementation strategies, and business transformation insights.
+                </p>
+              </div>
+            </div>
+            <div className="row" style={{gap: '2rem', justifyContent: 'center', marginTop: '2rem'}}>
+              <div className="col col--4">
+                <Link to="/blog/advanced-prompt-engineering-strategies" className={styles.insightCard}>
+                  <div className="card shadow-lg rounded-lg">
+                    <div className="card__image">
+                      <img src="/img/image-2.jpg" alt="Advanced AI Prompting" />
+                    </div>
+                    <div className="card__body">
+                      <h4>Advanced Prompt Engineering</h4>
+                      <p>Master the art of AI communication for maximum business impact</p>
+                      <span className="tag">AI Strategy</span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className="col col--4">
+                <Link to="/blog/boolean-logic-post" className={styles.insightCard}>
+                  <div className="card shadow-lg rounded-lg">
+                    <div className="card__image">
+                      <img src="/img/image.jpg" alt="AI Foundations" />
+                    </div>
+                    <div className="card__body">
+                      <h4>AI Foundations & Business Logic</h4>
+                      <p>Understanding the core principles that drive AI business applications</p>
+                      <span className="tag">AI Fundamentals</span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className="col col--4">
+                <Link to="/patents" className={styles.insightCard}>
+                  <div className="card shadow-lg rounded-lg">
+                    <div className="card__image">
+                      <img src="/img/image-3.jpg" alt="Innovation Portfolio" />
+                    </div>
+                    <div className="card__body">
+                      <h4>Innovation Portfolio</h4>
+                      <p>Explore patented technologies and breakthrough innovations</p>
+                      <span className="tag">Innovation</span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className={styles.cta}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--8 col--offset-2 text--center">
+                <h2>Ready to Transform Your Business with AI?</h2>
+                <p className="lead">
+                  Let's discuss how strategic AI implementation can drive measurable 
+                  results for your organization.
+                </p>
+                <div className={styles.ctaButtons}>
+                  <Link
+                    className="button button--primary button--lg"
+                    to="/contact">
+                    Schedule a Consultation
+                  </Link>
+                  <Link
+                    className="button button--secondary button--lg"
+                    to="/blog">
+                    Explore More Insights
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );

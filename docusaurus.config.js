@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Roehrs.ai',
-  tagline: 'AI has come from some humble beginnings...',
+  title: 'Louis Roehrs | AI Strategy & Innovation',
+  tagline: 'Transforming Business Through Strategic AI Implementation',
   favicon: 'img/logo.png',
 
   // Set the production url of your site here
@@ -79,22 +79,20 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
-        title: 'Roehrs.ai',
+        title: 'Louis Roehrs',
         logo: {
-          alt: 'Roehrs AI Logo',
+          alt: 'Louis Roehrs AI Strategy Logo',
           src: 'img/logo.png',
         },
         items: [
-          /** 
+          {to: '/blog', label: 'Insights', position: 'left'},
+          {to: '/patents', label: 'Innovation', position: 'left'},
+          {to: '/contact', label: 'Engage', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          }, */
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/patents', label: 'Patents', position: 'left'},
-          {to: '/contact', label: 'Contact', position: 'left'},
+            href: 'https://www.linkedin.com/in/louisroehrs',
+            label: 'LinkedIn',
+            position: 'right',
+          },
           {
             href: 'https://github.com/louisroehrs',
             label: 'GitHub',
@@ -106,11 +104,32 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'About',
+            title: 'Services',
             items: [
               {
-                label: 'Patents',
+                label: 'AI Strategy Consulting',
+                to: '/contact',
+              },
+              {
+                label: 'Innovation Advisory',
                 to: '/patents/intro',
+              },
+              {
+                label: 'Thought Leadership',
+                to: '/blog',
+              },
+            ],
+          },
+          {
+            title: 'Connect',
+            items: [
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/louisroehrs',
+              },
+              {
+                label: 'X',
+                href: 'https://x.com/louisroehrs',
               },
               {
                 label: 'Contact',
@@ -119,28 +138,15 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              /**{
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/louisroehrs',
-              }, */
-              {
-                label: 'X',
-                href: 'https://x.com/louisroehrs',
-              },
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/in/louisroehrs',
-              },
-            ],
-          },
-          {
-            title: 'More',
+            title: 'Resources',
             items: [
               {
-                label: 'Blog',
+                label: 'AI Insights',
                 to: '/blog',
+              },
+              {
+                label: 'Innovation Portfolio',
+                to: '/patents',
               },
               {
                 label: 'GitHub',
@@ -149,7 +155,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2001 - ${new Date().getFullYear()} Louis F, Roehrs. Built by humans.`,
+        copyright: `© ${new Date().getFullYear()} Louis F. Roehrs. Strategic AI Consulting for Enterprise Innovation.`,
       },
       prism: {
         theme: prismThemes.github,

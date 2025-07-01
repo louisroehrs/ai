@@ -4,32 +4,35 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Strategic AI Consulting',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Comprehensive AI strategy development and implementation roadmaps 
+        tailored to your business objectives. From technology assessment 
+        to ROI analysis, we ensure measurable business impact.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Enterprise Innovation',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Accelerate your organization's digital transformation with 
+        cutting-edge AI solutions. We help Fortune 500 companies and 
+        high-growth startups stay ahead of the competition.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Thought Leadership',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Stay informed with expert insights on AI trends, implementation 
+        strategies, and business transformation. Our thought leadership 
+        content keeps you ahead of the curve.
       </>
     ),
   },
