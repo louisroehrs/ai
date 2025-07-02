@@ -4,7 +4,7 @@
  */
 
 /* Import modern fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 /* CSS Variables for Professional Design System */
 :root {
@@ -63,7 +63,7 @@
   --ifm-color-info-lightest: #e2e8f0;
   
   /* Typography */
-  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --ifm-font-family-base: 'Albert Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --ifm-font-family-monospace: 'JetBrains Mono', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.6;
@@ -124,6 +124,51 @@
   --docusaurus-highlighted-code-line-bg: rgba(99, 179, 237, 0.15);
 }
 
+/* Dark mode specific contrast fixes */
+[data-theme='dark'] .hero__title {
+  color: white !important;
+}
+
+[data-theme='dark'] .hero__title .text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #90cdf4 50%, #63b3ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: white;
+  font-weight: 700;
+  text-shadow: 
+    0 0 20px rgba(99, 179, 237, 0.6),
+    0 0 40px rgba(99, 179, 237, 0.4),
+    0 0 60px rgba(99, 179, 237, 0.2);
+}
+
+[data-theme='dark'] .hero__subtitle {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+[data-theme='dark'] .valueProposition .lead {
+  color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme='dark'] .services .card__body p,
+[data-theme='dark'] .services .card__body ul {
+  color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme='dark'] .featuredInsights .lead {
+  color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme='dark'] .insightCard .card__body p {
+  color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme='dark'] .cta .lead {
+  color: white !important;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 /* Global Typography Enhancements */
 html {
   font-family: var(--ifm-font-family-base);
@@ -133,19 +178,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  font-family: var(--ifm-font-family-base);
-  color: var(--ifm-color-emphasis-800);
-  background-color: var(--ifm-background-color);
-}
-
-/* Headings - Professional hierarchy */
+/* Typography hierarchy with new fonts */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-weight: 600;
   line-height: 1.25;
   margin-top: 0;
   margin-bottom: 1rem;
   color: var(--ifm-color-emphasis-900);
+  letter-spacing: -0.025em;
 }
 
 h1 {
@@ -169,6 +210,48 @@ h4 {
   font-size: 1.25rem;
   font-weight: 600;
 }
+
+/* Body text with Albert Sans */
+body, p, li, a {
+  font-family: 'Albert Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Lead text styling */
+.lead {
+  font-family: 'Albert Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Hero title with Plus Jakarta Sans */
+.hero__title {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+  color: white !important;
+}
+
+/* Hero subtitle with Albert Sans */
+.hero__subtitle {
+  font-family: 'Albert Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  color: white !important;
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
+  color: var(--ifm-color-emphasis-800);
+  background-color: var(--ifm-background-color);
+}
+
+
 
 /* Links */
 a {
@@ -292,6 +375,46 @@ code {
   border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
+/* Footer text contrast fixes */
+.footer__title {
+  color: var(--ifm-color-emphasis-900) !important;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.footer__link-item {
+  color: var(--ifm-color-emphasis-700) !important;
+  transition: color var(--ifm-transition-fast);
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  color: var(--ifm-color-emphasis-600) !important;
+  font-size: 0.95rem;
+}
+
+/* Dark mode footer fixes */
+[data-theme='dark'] .footer__title {
+  color: var(--ifm-color-emphasis-100) !important;
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: var(--ifm-color-emphasis-400) !important;
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+  color: var(--ifm-color-primary-light) !important;
+}
+
+[data-theme='dark'] .footer__copyright {
+  color: var(--ifm-color-emphasis-500) !important;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .hero__title {
@@ -317,6 +440,99 @@ code {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  /* Ensure fallback color for better contrast */
+  color: var(--ifm-color-primary);
+}
+
+/* Innovative text styling for hero section */
+.hero__title .text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #90cdf4 50%, #63b3ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: white;
+  font-weight: 700;
+  text-shadow: 
+    0 0 20px rgba(99, 179, 237, 0.5),
+    0 0 40px rgba(99, 179, 237, 0.3),
+    0 0 60px rgba(99, 179, 237, 0.1);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 
+      0 0 20px rgba(99, 179, 237, 0.5),
+      0 0 40px rgba(99, 179, 237, 0.3),
+      0 0 60px rgba(99, 179, 237, 0.1);
+  }
+  to {
+    text-shadow: 
+      0 0 30px rgba(99, 179, 237, 0.7),
+      0 0 50px rgba(99, 179, 237, 0.5),
+      0 0 70px rgba(99, 179, 237, 0.3);
+  }
+}
+
+/* Hero section text contrast fixes */
+.hero {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  color: white;
+  padding: 4rem 0;
+}
+
+/* Value proposition section contrast */
+.valueProposition h2.text-gradient {
+  color: var(--ifm-color-primary);
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.valueProposition .lead {
+  color: var(--ifm-color-emphasis-700) !important;
+}
+
+/* Services section contrast */
+.services .card__header h3 {
+  color: var(--ifm-color-primary) !important;
+}
+
+.services .card__body p {
+  color: var(--ifm-color-emphasis-700) !important;
+}
+
+.services .card__body ul {
+  color: var(--ifm-color-emphasis-700) !important;
+}
+
+/* Featured insights section contrast */
+.featuredInsights h2 {
+  color: var(--ifm-color-emphasis-900) !important;
+}
+
+.featuredInsights .lead {
+  color: var(--ifm-color-emphasis-700) !important;
+}
+
+.insightCard .card__body h4 {
+  color: var(--ifm-color-emphasis-900) !important;
+}
+
+.insightCard .card__body p {
+  color: var(--ifm-color-emphasis-700) !important;
+}
+
+/* CTA section contrast */
+.cta h2 {
+  color: white !important;
+}
+
+.cta .lead {
+  color: white !important;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .bg-gradient {
@@ -331,13 +547,7 @@ code {
   border-radius: var(--ifm-border-radius-lg);
 }
 
-/* Lead text styling */
-.lead {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--ifm-color-emphasis-600);
-}
+
 
 /* Blog post enhancements */
 .blog-post-item {
@@ -433,36 +643,7 @@ code {
   padding: 3rem 0;
 }
 
-/* Enhanced typography for professional content */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.25;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: var(--ifm-color-emphasis-900);
-}
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-h4 {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
 
 /* List styling for professional appearance */
 ul, ol {
