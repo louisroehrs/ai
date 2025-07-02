@@ -3,9 +3,13 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { useEffect } from 'react';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+
+// Import scroll animations
+import '../js/scrollAnimations.js';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -52,8 +56,8 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col col--8 col--offset-2 text--center">
-                <h2 className="text-gradient">Delivering Measurable Business Impact</h2>
-                <p className="lead">
+                <h2 className="text-gradient animate-on-scroll" data-animation="fade-in-up">Delivering Measurable Business Impact</h2>
+                <p className="lead animate-on-scroll" data-animation="fade-in-up" data-stagger="1">
                   With over two decades of experience in AI and technology innovation, 
                   I help organizations unlock the full potential of artificial intelligence 
                   to achieve strategic objectives and drive sustainable growth.
@@ -68,7 +72,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col col--4">
-                <div className="card shadow-lg rounded-lg">
+                <div className="card shadow-lg rounded-lg animate-on-scroll" data-animation="fade-in-left" data-stagger="1">
                   <div className="card__header">
                     <h3>🚀 AI Strategy & Roadmapping</h3>
                   </div>
@@ -87,7 +91,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col col--4">
-                <div className="card shadow-lg rounded-lg">
+                <div className="card shadow-lg rounded-lg animate-on-scroll" data-animation="scale-in" data-stagger="2">
                   <div className="card__header">
                     <h3>⚡ Operational Efficiency</h3>
                   </div>
@@ -105,7 +109,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col col--4">
-                <div className="card shadow-lg rounded-lg">
+                <div className="card shadow-lg rounded-lg animate-on-scroll" data-animation="fade-in-right" data-stagger="3">
                   <div className="card__header">
                     <h3>🎯 Innovation Acceleration</h3>
                   </div>
@@ -131,8 +135,8 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col col--12 text--center">
-                <h2>Latest AI Insights & Thought Leadership</h2>
-                <p className="lead">
+                <h2 className="animate-on-scroll" data-animation="fade-in-up">Latest AI Insights & Thought Leadership</h2>
+                <p className="lead animate-on-scroll" data-animation="fade-in-up" data-stagger="1">
                   Stay ahead of the curve with expert analysis on AI trends, 
                   implementation strategies, and business transformation insights.
                 </p>
@@ -141,7 +145,7 @@ export default function Home() {
             <div className="row" style={{gap: '2rem', justifyContent: 'center', marginTop: '2rem'}}>
               <div className="col col--4">
                 <Link to="/blog/advanced-prompt-engineering-strategies" className={styles.insightCard}>
-                  <div className="card shadow-lg rounded-lg">
+                  <div className="card shadow-lg rounded-lg animate-on-scroll" data-animation="slide-in-bottom" data-stagger="1">
                     <div className="card__image">
                       <img src="/img/image-2.jpg" alt="Advanced AI Prompting" />
                     </div>
@@ -155,7 +159,7 @@ export default function Home() {
               </div>
               <div className="col col--4">
                 <Link to="/blog/boolean-logic-post" className={styles.insightCard}>
-                  <div className="card shadow-lg rounded-lg">
+                  <div className="card shadow-lg rounded-lg animate-on-scroll" data-animation="slide-in-bottom" data-stagger="2">
                     <div className="card__image">
                       <img src="/img/image.jpg" alt="AI Foundations" />
                     </div>
@@ -169,7 +173,7 @@ export default function Home() {
               </div>
               <div className="col col--4">
                 <Link to="/patents" className={styles.insightCard}>
-                  <div className="card shadow-lg rounded-lg">
+                  <div className="card shadow-lg rounded-lg animate-on-scroll" data-animation="slide-in-bottom" data-stagger="3">
                     <div className="card__image">
                       <img src="/img/image-3.jpg" alt="Innovation Portfolio" />
                     </div>
@@ -190,12 +194,12 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col col--8 col--offset-2 text--center">
-                <h2>Ready to Transform Your Business with AI?</h2>
-                <p className="lead">
+                <h2 className="animate-on-scroll" data-animation="fade-in-up">Ready to Transform Your Business with AI?</h2>
+                <p className="lead animate-on-scroll" data-animation="fade-in-up" data-stagger="1">
                   Let's discuss how strategic AI implementation can drive measurable 
                   results for your organization.
                 </p>
-                <div className={styles.ctaButtons}>
+                <div className={`${styles.ctaButtons} animate-on-scroll`} data-animation="fade-in-up" data-stagger="2">
                   <Link
                     className="button button--primary button--lg"
                     to="/contact">
