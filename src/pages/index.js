@@ -8,9 +8,6 @@ import { useEffect } from 'react';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-// Import scroll animations
-import '../js/scrollAnimations.js';
-
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (

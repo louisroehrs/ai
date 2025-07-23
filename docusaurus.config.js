@@ -38,6 +38,14 @@ const config = {
 
   staticDirectories: ['static'],
 
+  // Add custom scripts for GitHub Pages compatibility
+  scripts: [
+    {
+      src: '/js/scrollAnimations.js',
+      defer: true,
+    },
+  ],
+
   presets: [
     [
       'classic',
