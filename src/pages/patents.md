@@ -9,6 +9,21 @@ description: Explore patented technologies and breakthrough innovations that dem
 
 Our innovation portfolio represents over two decades of breakthrough technologies and strategic implementations that have transformed industries and created measurable business value. These patented solutions demonstrate our deep expertise in AI, machine learning, and enterprise technology architecture.
 
+## Projects
+<div className="row" style={{marginTop: '2rem', marginBottom: '3rem'}}>
+  <div className="col col--6">
+    <div className="card shadow-lg rounded-lg" style={{height: '100%', padding: '1.5rem'}}>
+      <h3 style={{color: 'var(--ifm-color-primary)', marginBottom: '1rem'}}>Customer Conversion and Support Agent</h3>
+      <p><strong>Real Estate Investment Fund Support and Conversion Agent</strong></p>
+      <p>Invest with Roots "Rooty" AI Assistant</p>
+      <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-600)'}}>
+        This breakthrough technology enabled Invest with Roots to scale their fund by not only cutting investor support costs by 2/3, but also convert over $1 Million in new investment without human hand-holding. The system can modify its responses based on the current user status, (Have they opened an account, have they invested, etc.) Please check it out at <a href="https://app.investwithroots.com/sign-up/start?referral_code=JDPP3pIiXPgfEcmZTMQgmg">Invest with Roots</a>
+      </p>
+      <a href="investwithroots" className="button button--primary button--sm">Learn More...</a>
+    </div>
+  </div>
+</div>
+
 ## Strategic Technology Patents
 
 <div className="row" style={{marginTop: '2rem', marginBottom: '3rem'}}>
@@ -22,9 +37,7 @@ Our innovation portfolio represents over two decades of breakthrough technologie
         based on real-time user interactions, significantly improving accuracy and 
         reducing training time for enterprise AI applications.
       </p>
-      <a href="https://patents.justia.com/patent/10614076" target="_blank" rel="noopener" className="button button--primary button--sm">
-        View Patent →
-      </a>
+      <a href="https://patents.justia.com/patent/10614076" target="_blank" rel="noopener" className="button button--primary button--sm">View Patent →</a>
     </div>
   </div>
   <div className="col col--6">
@@ -37,9 +50,7 @@ Our innovation portfolio represents over two decades of breakthrough technologie
         sophisticated cluster analysis, enabling precise targeting and location-based 
         services for enterprise applications.
       </p>
-      <a href="https://patents.justia.com/patent/10231079" target="_blank" rel="noopener" className="button button--primary button--sm">
-        View Patent →
-      </a>
+      <a href="https://patents.justia.com/patent/10231079" target="_blank" rel="noopener" className="button button--primary button--sm">View Patent →</a>
     </div>
   </div>
 </div>
@@ -55,9 +66,7 @@ Our innovation portfolio represents over two decades of breakthrough technologie
         optimization, providing the foundation for scalable, high-performance 
         computing systems used in enterprise environments.
       </p>
-      <a href="https://patents.justia.com/patent/5261115" target="_blank" rel="noopener" className="button button--primary button--sm">
-        View Patent →
-      </a>
+      <a href="https://patents.justia.com/patent/5261115" target="_blank" rel="noopener" className="button button--primary button--sm">View Patent →</a>
     </div>
   </div>
   <div className="col col--6">
@@ -70,9 +79,7 @@ Our innovation portfolio represents over two decades of breakthrough technologie
         complex decision-making processes and enables business users to leverage 
         advanced AI capabilities without technical expertise.
       </p>
-      <a href="https://patents.justia.com/patent/20040210541" target="_blank" rel="noopener" className="button button--primary button--sm">
-        View Application →
-      </a>
+      <a href="https://patents.justia.com/patent/20040210541" target="_blank" rel="noopener" className="button button--primary button--sm">View Application →</a>
     </div>
   </div>
 </div>
@@ -90,9 +97,7 @@ Our innovation portfolio represents over two decades of breakthrough technologie
         learning to optimize inventory management, customer engagement, and 
         supply chain efficiency across retail networks.
       </p>
-      <a href="https://patents.justia.com/patent/20120259675" target="_blank" rel="noopener" className="button button--primary button--sm">
-        View Application →
-      </a>
+      <a href="https://patents.justia.com/patent/20120259675" target="_blank" rel="noopener" className="button button--primary button--sm">View Application →</a>
     </div>
   </div>
   <div className="col col--6">
@@ -105,9 +110,7 @@ Our innovation portfolio represents over two decades of breakthrough technologie
         display user availability and optimize scheduling across distributed teams 
         and enterprise environments.
       </p>
-      <a href="https://priorart.ip.com/IPCOM/000244025" target="_blank" rel="noopener" className="button button--primary button--sm">
-        View Research →
-      </a>
+      <a href="https://priorart.ip.com/IPCOM/000244025" target="_blank" rel="noopener" className="button button--primary button--sm">View Research → </a>
     </div>
   </div>
 </div>
@@ -155,9 +158,7 @@ Ready to explore how our innovation experience can accelerate your AI strategy? 
 - **Competitive Advantage**: Leveraging AI to create sustainable market differentiation
 
 <div style={{marginTop: '3rem', textAlign: 'center'}}>
-  <a href="/contact" className="button button--primary button--lg">
-    Schedule Innovation Consultation →
-  </a>
+  <a href="/contact" className="button button--primary button--lg">Schedule Innovation Consultation → </a>
 </div>
 
 ---
