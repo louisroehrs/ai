@@ -54,6 +54,11 @@ const config = {
         docs: {
           path: 'mydocs',
           sidebarPath: './sidebars.js',
+          // Enable mobile sidebar functionality for Docusaurus v3
+          // sidebar: {
+          //   hideable: true,
+          //   autoCollapseCategories: true,
+          // },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
