@@ -87,7 +87,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
-        title: 'Louis Roehrs',
+        title: 'Roehrs.ai',
         logo: {
           alt: 'Louis Roehrs AI Strategy Logo',
           src: 'img/logo.png',

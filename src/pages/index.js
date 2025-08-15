@@ -56,7 +56,7 @@ export default function Home() {
                 <h2 className="text-gradient animate-on-scroll" data-animation="fade-in-up">Delivering Measurable Business Impact</h2>
                 <p className="lead animate-on-scroll" data-animation="fade-in-up" data-stagger="1">
                   With over two decades of experience in AI and technology innovation, 
-                  I help organizations unlock the full potential of artificial intelligence 
+                  we help organizations unlock the full potential of artificial intelligence 
                   to achieve strategic objectives and drive sustainable growth.
                 </p>
               </div>
